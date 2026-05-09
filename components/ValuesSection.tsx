@@ -30,7 +30,7 @@ export default function ValuesSection() {
             <SectionTag>Our values</SectionTag>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight mt-6 max-w-3xl">
+            <h2 className="font-serif text-2xl md:text-3xl font-medium leading-snug mt-6 max-w-3xl">
               We are committed to delivering reliable, efficient, and luxurious transportation while maintaining the highest standards of service.
             </h2>
           </ScrollReveal>
@@ -41,8 +41,8 @@ export default function ValuesSection() {
             <ScrollReveal key={value.title} delay={i * 0.15}>
               <div className="bg-white rounded-2xl p-8 shadow-sm">
                 <value.icon size={32} className="text-gold mb-6" />
-                <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                <p className="text-text-secondary">{value.description}</p>
+                <h3 className="font-serif text-lg font-medium mb-3">{value.title}</h3>
+                <p className="text-sm text-text-secondary tracking-wide">{value.description}</p>
               </div>
             </ScrollReveal>
           ))}

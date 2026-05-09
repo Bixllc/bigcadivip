@@ -36,8 +36,8 @@ export default function ServiceCards() {
             <div className="group bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
               <div className="p-6">
                 <service.icon size={28} className="text-gold mb-4" />
-                <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-                <p className="text-sm text-text-secondary mb-4">{service.description}</p>
+                <h3 className="font-serif text-base font-medium mb-2">{service.title}</h3>
+                <p className="text-xs text-text-secondary mb-4 tracking-wide">{service.description}</p>
                 <AnimatedLink href={service.href} variant="outline">Book Now</AnimatedLink>
               </div>
               <div className="overflow-hidden">

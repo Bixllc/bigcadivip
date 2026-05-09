@@ -29,14 +29,14 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <p className="text-white/80 text-lg mb-6 max-w-md">
+          <p className="text-white/70 text-sm tracking-wide mb-6 max-w-md uppercase">
             Premium VIP transportation across St. Maarten — airport transfers, island tours, and private charters.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
             {servicePills.map(({ icon: Icon, label }) => (
               <div
                 key={label}
-                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm text-white"
+                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-1.5 text-xs tracking-widest uppercase text-white"
               >
                 <Icon size={14} />
                 {label}
@@ -52,7 +52,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[0.95] tracking-tight">
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium text-white leading-[1] tracking-tight">
             Your VIP ride
             <br />
             <span className="text-gold">in St. Maarten.</span>

@@ -13,13 +13,13 @@ export default function Testimonial() {
               <SectionTag>Testimonials</SectionTag>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
-              <h2 className="text-3xl md:text-4xl font-bold leading-tight mt-6 mb-8">
+              <h2 className="font-serif text-2xl md:text-3xl font-medium leading-snug mt-6 mb-8">
                 We take pride in delivering a first-class experience for every guest.
               </h2>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <div className="bg-bg-light rounded-2xl p-8 mb-6">
-                <p className="text-lg text-dark-soft mb-4">
+                <p className="text-sm text-dark-soft mb-4 tracking-wide leading-relaxed">
                   &ldquo;Big Cadi VIP made our St. Maarten trip unforgettable. From the airport pickup to our island tour, everything was seamless, luxurious, and on time. Highly recommend!&rdquo;
                 </p>
                 <p className="text-sm text-text-secondary font-medium">

@@ -18,10 +18,10 @@ export default function CTABanner() {
 
           <div className="relative z-20 p-12 md:p-16 max-w-2xl">
             <ScrollReveal>
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="font-serif text-3xl md:text-4xl font-medium text-white mb-4">
                 Book your VIP ride today!
               </h2>
-              <p className="text-white/70 text-lg mb-8">
+              <p className="text-white/60 text-sm tracking-wide mb-8">
                 Ready for a premium transportation experience in St. Maarten? Let Big Cadi VIP handle your ride with style and precision.
               </p>
             </ScrollReveal>

@@ -21,10 +21,10 @@ export default function AboutSection() {
             </div>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
+            <h2 className="font-serif text-2xl md:text-3xl font-medium leading-snug mb-4">
               We provide premium VIP transportation across St. Maarten, ensuring every ride is comfortable, safe, and on time.
             </h2>
-            <p className="text-text-secondary">
+            <p className="text-sm text-text-secondary tracking-wide">
               With years of experience serving visitors and residents of SXM, Big Cadi VIP has built a reputation for luxury, reliability, and unmatched local knowledge.
             </p>
           </ScrollReveal>
