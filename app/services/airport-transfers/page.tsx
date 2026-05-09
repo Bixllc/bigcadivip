@@ -6,21 +6,21 @@ import CTABanner from "@/components/CTABanner";
 export default function AirportTransfersPage() {
   return (
     <main className="pt-32">
-      <section className="pb-24 bg-white">
+      <section className="pb-24 bg-dark">
         <div className="mx-auto max-w-7xl px-6">
           <ScrollReveal>
             <SectionTag>Airport Transfers</SectionTag>
             <h1 className="text-4xl md:text-6xl font-bold mt-6 mb-6">
               Stress-free airport pickups &amp; drop-offs.
             </h1>
-            <p className="text-text-secondary text-lg max-w-2xl mb-12">
+            <p className="text-white/50 text-lg max-w-2xl mb-12">
               We monitor your flight in real-time so your driver is always waiting when you land at Princess Juliana International Airport (SXM). No waiting, no hassle.
             </p>
           </ScrollReveal>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             <ScrollReveal>
-              <div className="h-80 bg-bg-light rounded-2xl flex items-center justify-center text-text-secondary text-sm">
+              <div className="h-80 bg-dark-soft rounded-2xl flex items-center justify-center text-white/50 text-sm">
                 Image placeholder
               </div>
             </ScrollReveal>
@@ -36,7 +36,7 @@ export default function AirportTransfersPage() {
                   "Clean, air-conditioned premium vehicle",
                   "Direct route to your destination",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-text-secondary">
+                  <li key={item} className="flex items-start gap-3 text-white/50">
                     <span className="mt-1.5 h-2 w-2 rounded-full bg-gold flex-shrink-0" />
                     {item}
                   </li>

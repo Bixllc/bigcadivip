@@ -15,7 +15,7 @@ export default function AnimatedButton({
   const base =
     variant === "primary"
       ? "bg-gold text-white hover:bg-gold-dark"
-      : "border border-dark-soft text-dark-soft hover:bg-dark-soft hover:text-white";
+      : "border border-white/20 text-white hover:bg-white/10";
 
   return (
     <button

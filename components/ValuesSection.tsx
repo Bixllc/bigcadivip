@@ -23,7 +23,7 @@ const values = [
 
 export default function ValuesSection() {
   return (
-    <section className="py-24 bg-bg-light">
+    <section className="py-24 bg-dark-soft">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16">
           <ScrollReveal>
@@ -39,10 +39,10 @@ export default function ValuesSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {values.map((value, i) => (
             <ScrollReveal key={value.title} delay={i * 0.15}>
-              <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
                 <value.icon size={32} className="text-gold mb-6" />
                 <h3 className="font-serif text-lg font-medium mb-3">{value.title}</h3>
-                <p className="text-sm text-text-secondary tracking-wide">{value.description}</p>
+                <p className="text-sm text-white/50 tracking-wide">{value.description}</p>
               </div>
             </ScrollReveal>
           ))}

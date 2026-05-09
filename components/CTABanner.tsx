@@ -6,10 +6,10 @@ const tags = ["Luxury Rides", "Island Experts", "On-Time Guaranteed"];
 
 export default function CTABanner() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-dark">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="relative bg-dark rounded-3xl overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/40 z-10" />
+        <div className="relative bg-dark-soft rounded-3xl overflow-hidden border border-white/10">
+          <div className="absolute inset-0 bg-gradient-to-r from-dark-soft via-dark-soft/80 to-dark-soft/40 z-10" />
           <img
             src="/images/beach-cocktails.webp"
             alt="Beach cocktails in St. Maarten"

@@ -11,7 +11,7 @@ const pillars = [
 
 export default function AboutSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-dark">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <ScrollReveal>
@@ -24,7 +24,7 @@ export default function AboutSection() {
             <h2 className="font-serif text-2xl md:text-3xl font-medium leading-snug mb-4">
               We provide premium VIP transportation across St. Maarten, ensuring every ride is comfortable, safe, and on time.
             </h2>
-            <p className="text-sm text-text-secondary tracking-wide">
+            <p className="text-sm text-white/50 tracking-wide">
               With years of experience serving visitors and residents of SXM, Big Cadi VIP has built a reputation for luxury, reliability, and unmatched local knowledge.
             </p>
           </ScrollReveal>
@@ -34,7 +34,7 @@ export default function AboutSection() {
           <ScrollReveal>
             <div className="space-y-6">
               {pillars.map((p) => (
-                <div key={p.num} className="flex items-center gap-4 border-b border-gray-100 pb-6">
+                <div key={p.num} className="flex items-center gap-4 border-b border-white/10 pb-6">
                   <span className="text-4xl font-bold text-gold/30">&ldquo;{p.num}&rdquo;</span>
                   <span className="text-lg font-medium">{p.label}</span>
                 </div>

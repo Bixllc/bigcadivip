@@ -5,7 +5,7 @@ import AnimatedLink from "./AnimatedLink";
 
 export default function Testimonial() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-dark">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -18,11 +18,11 @@ export default function Testimonial() {
               </h2>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
-              <div className="bg-bg-light rounded-2xl p-8 mb-6">
-                <p className="text-sm text-dark-soft mb-4 tracking-wide leading-relaxed">
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-6">
+                <p className="text-sm text-white/70 mb-4 tracking-wide leading-relaxed">
                   &ldquo;Big Cadi VIP made our St. Maarten trip unforgettable. From the airport pickup to our island tour, everything was seamless, luxurious, and on time. Highly recommend!&rdquo;
                 </p>
-                <p className="text-sm text-text-secondary font-medium">
+                <p className="text-sm text-white/40 font-medium">
                   Sarah M., Visitor from New York
                 </p>
               </div>

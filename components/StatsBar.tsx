@@ -11,10 +11,10 @@ const stats = [
 
 export default function StatsBar() {
   return (
-    <section className="bg-bg-light pb-24">
+    <section className="bg-dark-soft pb-24">
       <div className="mx-auto max-w-7xl px-6">
         <ScrollReveal>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-dark rounded-2xl p-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-white/5 border border-white/10 rounded-2xl p-10">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="font-serif text-2xl md:text-3xl font-medium text-white mb-2">
