@@ -1,56 +1,54 @@
 "use client";
-import { Plane, Map, Car } from "lucide-react";
-import AnimatedLink from "./AnimatedLink";
+import { Plane, Map, Car, Hotel } from "lucide-react";
+import Link from "next/link";
 import ScrollReveal from "./ScrollReveal";
 
 const services = [
   {
     icon: Plane,
     title: "Airport Transfers",
-    description: "Seamless pickups and drop-offs at Princess Juliana International Airport. Reliable, on-time, every time.",
     href: "/services/airport-transfers",
-    image: "/images/hero-maho.jpg",
   },
   {
     icon: Map,
     title: "Island Tours",
-    description: "Discover St. Maarten's best beaches, restaurants, and hidden gems with a knowledgeable local driver.",
     href: "/services/island-tours",
-    image: "/images/aerial-grandcase.jpg",
+  },
+  {
+    icon: Hotel,
+    title: "Hotel Shuttles",
+    href: "/services/hotel-shuttles",
   },
   {
     icon: Car,
     title: "Private Charters",
-    description: "Luxury private rides for any occasion — events, dinners, nightlife, or a full day exploring the island.",
     href: "/services/private-charters",
-    image: "/images/beach-restaurant.webp",
   },
 ];
 
 export default function ServiceCards() {
   return (
-    <section className="relative -mt-32 z-20 mx-auto max-w-7xl px-6">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {services.map((service, i) => (
-          <ScrollReveal key={service.title} delay={i * 0.15}>
-            <div className="group bg-dark-soft rounded-2xl border border-white/10 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
-              <div className="p-6">
-                <service.icon size={28} className="text-gold mb-4" />
-                <h3 className="font-serif text-base font-medium mb-2 text-white">{service.title}</h3>
-                <p className="text-xs text-white/50 mb-4 tracking-wide">{service.description}</p>
-                <AnimatedLink href={service.href} variant="outline">Book Now</AnimatedLink>
-              </div>
-              <div className="overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-            </div>
-          </ScrollReveal>
-        ))}
-      </div>
+    <section className="relative -mt-24 z-20 mx-auto max-w-5xl px-6">
+      <ScrollReveal>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {services.map((service) => (
+            <Link
+              key={service.title}
+              href={service.href}
+              className="group flex flex-col items-center justify-center gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-10 hover:bg-white/10 hover:border-gold/30 transition-all duration-300"
+            >
+              <service.icon
+                size={36}
+                strokeWidth={1.5}
+                className="text-gold transition-transform duration-300 group-hover:scale-110"
+              />
+              <span className="text-xs font-medium uppercase tracking-widest text-white/70 group-hover:text-white transition-colors text-center">
+                {service.title}
+              </span>
+            </Link>
+          ))}
+        </div>
+      </ScrollReveal>
     </section>
   );
 }
