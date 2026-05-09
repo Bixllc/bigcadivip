@@ -12,13 +12,17 @@ const servicePills = [
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-end pb-44 overflow-hidden">
-      {/* Background */}
+      {/* Background Video */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/images/hero-maho.jpg"
-          alt="Maho Beach SXM"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
           className="absolute inset-0 w-full h-full object-cover"
-        />
+        >
+          <source src="/images/hero-video.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
@@ -52,10 +56,10 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium text-white leading-[1] tracking-tight">
-            Your VIP ride
+          <h1 className="font-satoshi text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight">
+            The Big Cadi
             <br />
-            <span className="text-gold">in St. Maarten.</span>
+            <span className="text-gold">VIP Experience</span>
           </h1>
         </motion.div>
       </div>
