@@ -11,7 +11,7 @@ const servicePills = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-end pb-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-end pb-44 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img
