@@ -6,14 +6,17 @@ const services = [
   {
     title: "Airport Transfers",
     href: "/services/airport-transfers",
+    image: "/images/hero-maho.jpg",
   },
   {
     title: "Hotel & Resort Shuttles",
     href: "/services/hotel-shuttles",
+    image: "/images/aerial-grandcase.jpg",
   },
   {
     title: "Island Tours",
     href: "/services/island-tours",
+    image: "/images/beach-restaurant.webp",
   },
 ];
 
@@ -40,9 +43,11 @@ export default function ServicesGrid() {
                   <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
                 </div>
                 <div className="overflow-hidden">
-                  <div className="h-56 bg-gray-100 transition-transform duration-500 group-hover:scale-105 flex items-center justify-center text-text-secondary text-sm">
-                    Image placeholder
-                  </div>
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
                 <div className="p-6">
                   <AnimatedLink href={service.href} variant="outline">Learn more</AnimatedLink>

@@ -42,9 +42,11 @@ export default function AboutSection() {
             </div>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
-            <div className="h-80 bg-bg-light rounded-2xl flex items-center justify-center text-text-secondary text-sm">
-              Image placeholder
-            </div>
+            <img
+              src="/images/aerial-grandcase.jpg"
+              alt="Grand Case Beach Club aerial view"
+              className="h-80 w-full object-cover rounded-2xl"
+            />
           </ScrollReveal>
         </div>
       </div>

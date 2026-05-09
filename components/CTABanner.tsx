@@ -10,8 +10,11 @@ export default function CTABanner() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="relative bg-dark rounded-3xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/40 z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-1/2 bg-bg-light/5 flex items-center justify-center text-white/20 text-sm z-0">
-          </div>
+          <img
+            src="/images/beach-cocktails.webp"
+            alt="Beach cocktails in St. Maarten"
+            className="absolute right-0 top-0 bottom-0 w-1/2 h-full object-cover z-0"
+          />
 
           <div className="relative z-20 p-12 md:p-16 max-w-2xl">
             <ScrollReveal>

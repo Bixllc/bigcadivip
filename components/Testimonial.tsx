@@ -36,9 +36,11 @@ export default function Testimonial() {
           </div>
 
           <ScrollReveal delay={0.2}>
-            <div className="h-[500px] bg-bg-light rounded-2xl flex items-center justify-center text-text-secondary text-sm">
-              Image placeholder
-            </div>
+            <img
+              src="/images/beachfront-dining.webp"
+              alt="Beachfront dining in St. Maarten"
+              className="h-[500px] w-full object-cover rounded-2xl"
+            />
           </ScrollReveal>
         </div>
       </div>

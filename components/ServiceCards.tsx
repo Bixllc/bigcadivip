@@ -9,18 +9,21 @@ const services = [
     title: "Airport Transfers",
     description: "Seamless pickups and drop-offs at Princess Juliana International Airport. Reliable, on-time, every time.",
     href: "/services/airport-transfers",
+    image: "/images/hero-maho.jpg",
   },
   {
     icon: Map,
     title: "Island Tours",
     description: "Discover St. Maarten's best beaches, restaurants, and hidden gems with a knowledgeable local driver.",
     href: "/services/island-tours",
+    image: "/images/aerial-grandcase.jpg",
   },
   {
     icon: Car,
     title: "Private Charters",
     description: "Luxury private rides for any occasion — events, dinners, nightlife, or a full day exploring the island.",
     href: "/services/private-charters",
+    image: "/images/beach-restaurant.webp",
   },
 ];
 
@@ -38,9 +41,11 @@ export default function ServiceCards() {
                 <AnimatedLink href={service.href} variant="outline">Book Now</AnimatedLink>
               </div>
               <div className="overflow-hidden">
-                <div className="h-48 bg-bg-light transition-transform duration-500 group-hover:scale-105 flex items-center justify-center text-text-secondary text-sm">
-                  Image placeholder
-                </div>
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
             </div>
           </ScrollReveal>

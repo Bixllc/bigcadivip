@@ -12,13 +12,14 @@ const servicePills = [
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-end pb-20 overflow-hidden">
-      {/* Background — replace with video when available */}
-      <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark/90 to-dark/70 z-0">
-        {/* Video placeholder: user will add aerial SXM footage */}
-        {/* <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
-          <source src="/hero-video.mp4" type="video/mp4" />
-        </video> */}
-        <div className="absolute inset-0 bg-black/40" />
+      {/* Background */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/images/hero-maho.jpg"
+          alt="Maho Beach SXM"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl w-full px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
