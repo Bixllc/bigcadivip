@@ -10,12 +10,14 @@ export default function AnimatedLink({
 }: {
   children: string;
   href: string;
-  variant?: "primary" | "outline";
+  variant?: "primary" | "outline" | "dark";
   className?: string;
 }) {
   const base =
     variant === "primary"
       ? "bg-gold text-white hover:bg-gold-dark"
+      : variant === "dark"
+      ? "text-dark-soft hover:text-gold"
       : "border border-white/20 text-white hover:bg-white/10";
 
   return (

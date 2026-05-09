@@ -30,27 +30,31 @@ const services = [
 export default function ServiceCards() {
   return (
     <section className="relative -mt-32 z-20 mx-auto max-w-7xl px-6">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {services.map((service, i) => (
-          <ScrollReveal key={service.title} delay={i * 0.15}>
-            <div className="group bg-dark-soft rounded-2xl border border-white/10 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
-              <div className="p-6">
-                <service.icon size={28} className="text-gold mb-4" />
-                <h3 className="font-serif text-base font-medium mb-2 text-white">{service.title}</h3>
-                <p className="text-xs text-white/50 mb-4 tracking-wide">{service.description}</p>
-                <AnimatedLink href={service.href} variant="outline">Book Now</AnimatedLink>
+      <ScrollReveal>
+        <div className="bg-white rounded-3xl p-6 shadow-xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {services.map((service) => (
+              <div key={service.title} className="group">
+                {/* Card Content */}
+                <div className="border border-gray-100 rounded-2xl p-6 mb-4 hover:shadow-md transition-shadow duration-300">
+                  <service.icon size={32} strokeWidth={1.5} className="text-dark-soft mb-5" />
+                  <h3 className="font-serif text-lg font-medium text-dark-soft mb-2">{service.title}</h3>
+                  <p className="text-sm text-text-secondary mb-6 leading-relaxed">{service.description}</p>
+                  <AnimatedLink href={service.href} variant="dark">Book Now</AnimatedLink>
+                </div>
+                {/* Card Image */}
+                <div className="overflow-hidden rounded-2xl">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
               </div>
-              <div className="overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-            </div>
-          </ScrollReveal>
-        ))}
-      </div>
+            ))}
+          </div>
+        </div>
+      </ScrollReveal>
     </section>
   );
 }
