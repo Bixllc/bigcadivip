@@ -27,11 +27,11 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
       <div
         className={`mx-auto flex max-w-7xl items-center justify-between px-6 py-4 rounded-2xl transition-all duration-300 ${
-          scrolled ? "bg-white shadow-lg" : "bg-white"
+          scrolled ? "bg-dark-soft shadow-lg border border-white/10" : "bg-dark-soft border border-white/5"
         }`}
       >
         <Link href="/" className="relative h-12 w-16">
-          <Image src="/bigcadi.JPEG" alt="Big Cadi VIP" fill className="object-contain mix-blend-multiply" />
+          <Image src="/bigcadi.JPEG" alt="Big Cadi VIP" fill className="object-contain" />
         </Link>
 
         {/* Desktop Nav */}
@@ -40,7 +40,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-xs font-medium uppercase tracking-widest text-dark-soft hover:text-gold transition-colors"
+              className="text-xs font-medium uppercase tracking-widest text-white/80 hover:text-gold transition-colors"
             >
               {link.label}
             </Link>
@@ -53,7 +53,7 @@ export default function Header() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-dark-soft"
+          className="md:hidden text-white"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -62,12 +62,12 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t rounded-b-2xl px-6 py-4 space-y-4">
+        <div className="md:hidden bg-dark-soft border-t border-white/10 rounded-b-2xl px-6 py-4 space-y-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="block text-sm font-medium text-dark-soft"
+              className="block text-sm font-medium text-white/80"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}

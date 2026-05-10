@@ -31,16 +31,16 @@ export default function ServiceCards() {
   return (
     <section className="relative -mt-32 z-20 mx-auto max-w-7xl px-6">
       <ScrollReveal>
-        <div className="bg-white rounded-3xl p-6 shadow-xl">
+        <div className="bg-dark-soft rounded-3xl p-6 shadow-xl border border-white/10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {services.map((service) => (
               <div key={service.title} className="group">
                 {/* Card Content */}
-                <div className="border border-gray-100 rounded-2xl p-6 mb-4 hover:shadow-md transition-shadow duration-300">
-                  <service.icon size={32} strokeWidth={1.5} className="text-dark-soft mb-5" />
-                  <h3 className="font-serif text-lg font-medium text-dark-soft mb-2">{service.title}</h3>
-                  <p className="text-sm text-text-secondary mb-6 leading-relaxed">{service.description}</p>
-                  <AnimatedLink href={service.href} variant="dark">Book Now</AnimatedLink>
+                <div className="border border-white/10 rounded-2xl p-6 mb-4 hover:bg-white/5 transition-colors duration-300">
+                  <service.icon size={32} strokeWidth={1.5} className="text-gold mb-5" />
+                  <h3 className="font-serif text-lg font-medium text-white mb-2">{service.title}</h3>
+                  <p className="text-sm text-white/50 mb-6 leading-relaxed">{service.description}</p>
+                  <AnimatedLink href={service.href} variant="outline">Book Now</AnimatedLink>
                 </div>
                 {/* Card Image */}
                 <div className="overflow-hidden rounded-2xl">
